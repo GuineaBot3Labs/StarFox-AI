@@ -1,5 +1,5 @@
 # StarFox-AI
-A project focused on computer vision and spatial awareness in AI. Operates on StarFox, right now still in the stage of intial development, including the algorithms for simple training.
+A project focused on computer vision and spatial awareness in AI. Operates on higan, right now still in the stage of intial development, including the algorithms for simple training.
 
 ![FoxAI in training game mode](https://github.com/GuineaBot3Labs/StarFox-AI/blob/main/FoxAI.png)
 
