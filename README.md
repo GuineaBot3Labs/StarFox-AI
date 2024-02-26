@@ -13,4 +13,4 @@ We are also in need of players on higan playing this game, so we can train Peppy
 ![FoxAI in training game mode](https://github.com/GuineaBot3Labs/StarFox-AI/blob/main/Vision.png)
 
 # Disclaimer
-This software does not condone pirating in any way, we are simply trying to integrate AI into areas of intrest and curiosity. All credit other than the AI research to Nintendo and higan, which have both made this project possible.
+This software does not condone pirating in any way. All credit other than the AI research to Nintendo and higan, which have both made this project possible.
