@@ -8,7 +8,7 @@ def ensure_directory_exists(folder_path):
     """Ensure the target directory exists."""
     os.makedirs(folder_path, exist_ok=True)
 
-def capture_window_periodically(window_title, interval=4):
+def capture_window_periodically(window_title, interval=1):
     """Capture the specified window at regular intervals."""
     ensure_directory_exists("Unlabeled")
     while True:
