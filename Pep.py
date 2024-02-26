@@ -6,6 +6,7 @@ from torchvision.datasets import ImageFolder
 from torch.utils.data import DataLoader
 from torchvision import transforms
 import torch.optim as optim
+import os
 
 
 class Peppy(nn.Module):
@@ -37,9 +38,18 @@ if __name__ == "__main__":
     dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 
     # Initialize the nagging back seat driver
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     discriminator = Peppy()
-    discriminator.to('cuda:0')
+    discriminator.to(device)
+    peppy_model_path = 'Peppy.pth'
 
+    if os.path.isfile(peppy_model_path):
+        state_dict = torch.load(peppy_model_path, map_location=device)
+        discriminator.load_state_dict(state_dict=state_dict)
+        print("Loaded Peppy model from", peppy_model_path)
+    else:
+        print("No saved Peppy model found at", peppy_model_path)
+    
     # Optimizer
     optimizer = optim.Adam(discriminator.parameters(), lr=0.001)
 
