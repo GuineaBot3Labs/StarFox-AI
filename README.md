@@ -29,7 +29,8 @@ Download the requirements like so:
 
 We need help with this project, please [fork](../../fork) this repository and implement some cool features and open a pull request! (i.e., a complete integration into higan's emulator or something.) Or if you want to be more directly involved, you can join [here.](https://github.com/GuineaBot3Labs/join)
 
-We are also in need of players on higan playing this game, so we can train Peppy on the gameplay to evaluate FoxAI in real time. Please use the "higan.py" file to continously take screenshots of higan (note: This data will not be labeled, it will be labeled by our [Dataset Labeling](https://github.com/orgs/GuineaBot3Labs/teams/dataset-labelers) team.
+We are also in need of players on higan playing this game, so we can train Peppy on the gameplay to evaluate FoxAI in real time. Please use the "higan.py" file to continously take screenshots of higan (note: This data will not be labeled, it will be labeled by our [Dataset Labeling](https://github.com/orgs/GuineaBot3Labs/teams/dataset-labelers) team. We need more people in that team, join [here and request a specific team with a label.](https://github.com/GuineaBot3Labs/join)
+)
 
 ![FoxAI in training game mode](https://github.com/GuineaBot3Labs/StarFox-AI/blob/main/Vision.png)
 
