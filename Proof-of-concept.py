@@ -19,20 +19,15 @@ import os
 class FoxAI(nn.Module):
     def __init__(self):
         super(FoxAI, self).__init__()
-        # Initial convolutional layers as before
+        # Init Convolutional layers to extract features from an image.
         self.conv1 = nn.Conv2d(3, 32, kernel_size=8, stride=4)
         self.conv2 = nn.Conv2d(32, 64, kernel_size=4, stride=2)
         self.conv3 = nn.Conv2d(64, 64, kernel_size=3, stride=1)
-        
-        # Additional convolutional layers for more refined feature extraction
         self.conv4 = nn.Conv2d(64, 128, kernel_size=3, stride=1, padding=1)  # Added padding to maintain feature map size
         self.conv5 = nn.Conv2d(128, 128, kernel_size=3, stride=1, padding=1)
         self.conv6 = nn.Conv2d(128, 256, kernel_size=3, stride=1, padding=1)
-        
         self.adaptive_pool = nn.AdaptiveAvgPool2d((6, 6))
-        
-        # Adjusting the fully connected layers to match the new output size
-        self.fc1 = nn.Linear(256*6*6, 512)  # Adjusted for the output size of the last conv layer
+        self.fc1 = nn.Linear(256*6*6, 512)
         self.fc2 = nn.Linear(512, 13)  # 12 possible actions + No-op
 
     def forward(self, x):
@@ -241,8 +236,6 @@ def get_fox_move():
                 action = predictions.argmax().item()  # Choose the action with the highest score                
                 # Map the predicted action to a controller command
                 vc.execute_action(action)
-    except Exception as e:
-        print(f"Failed to capture game window directly: {e}")
     finally:
         cv2.destroyAllWindows()
 
@@ -332,13 +325,7 @@ def init_fox():
     thread.daemon = True
     thread.start() # Yep, that's it for this function
 
-# GUI Application
-class App:
-    def __init__(self, root, controller):
-        self.controller = controller
-        root.title("Virtual Controller GUI")
-        tk.Button(root, text="Start Configuration", command=self.controller.start_auto_conf).pack()
-        tk.Button(root, text="Start FoxAI (no training)", command=init_fox).pack()
+
         
 if __name__ == "__main__":
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -367,8 +354,5 @@ if __name__ == "__main__":
     vc = VirtualController()
     # Call to train FoxAI with Peppy
     optimizer = torch.optim.Adam(Fox.parameters(), lr=0.001)
-    train_foxai_with_peppy(Fox, Peppy, vc, optimizer)
-    #root = tk.Tk()
-    #app = App(root, vc)
-    #root.mainloop()
-    # TODO: Implement complete training loop, train Pep.py during training as well. (NOTE: Remove GUI, just clutter.)
+    train_foxai_with_peppy(Fox, Peppy, vc, optimizer)_
+    # TODO: Implement better rewarding system, implement better..everything.
