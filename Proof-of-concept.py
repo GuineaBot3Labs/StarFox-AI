@@ -354,5 +354,5 @@ if __name__ == "__main__":
     vc = VirtualController()
     # Call to train FoxAI with Peppy
     optimizer = torch.optim.Adam(Fox.parameters(), lr=0.001)
-    train_foxai_with_peppy(Fox, Peppy, vc, optimizer)_
+    train_foxai_with_peppy(Fox, Peppy, vc, optimizer)
     # TODO: Implement better rewarding system, implement better..everything.
