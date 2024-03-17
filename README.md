@@ -5,6 +5,10 @@ A project focused on computer vision and spatial awareness in AI. Operates on hi
 
 Here, FoxAI plays a game of the "Training" game mode, right now it is currently in it's infant stage, like GuineaBot3 it did start very small, (which still has bugs by the way, thus we haven't seen it for a long time, help [here.](https://github.com/GuineaBot3Labs/deep-GuineaBot3-lichess-bot))
 
+# Update!
+
+This repository will probably use a modified version of OpenAI's "Gym-retro" in the future.
+
 ## Setup (Documentation incomplete!) ##
 First off, you will have to install higan:
 
