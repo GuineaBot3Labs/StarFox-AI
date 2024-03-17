@@ -341,14 +341,16 @@ if __name__ == "__main__":
         BackSeatDriver.load_state_dict(state_dict)
         print("Loaded Peppy model from", peppy_model_path)
     else:
-        print("No saved Peppy model found at", peppy_model_path)
-
+        x = input("No saved  model found at", peppy_model_path, "/nAre you sure you want to continue? (y|n): ")
+        if not x == "y":
+            exit(0)
+            
     if os.path.isfile(fox_model_path):
         state_dict = torch.load(fox_model_path, map_location=device)
         Fox.load_state_dict(state_dict)
-        print("Loaded FoxAI model from", peppy_model_path)
+        print("Loaded FoxAI model from", fox_model_path)
     else:
-        print("No saved FoxAI model found at", peppy_model_path)
+        print("No saved FoxAI model found at", fox_model_path)
 
     # Configures the virtual controller for later use by FoxAI (The SNES agent that plays StarFox, studies are on 3d interpretation by AI.)
     vc = VirtualController()
