@@ -7,7 +7,7 @@ Here, FoxAI plays a game of the "Training" game mode, right now it is currently 
 
 # Update!
 
-This repository will probably use a modified version of OpenAI's "Gym-retro" in the future.
+This repository will probably use a [modified version of higan](https://github.com/GuineaBot3Labs/higan-env) to interface with, until then however, this project is post-poned.
 
 ## Setup (Documentation incomplete!) ##
 First off, you will have to install higan:
