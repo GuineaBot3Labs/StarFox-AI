@@ -7,16 +7,11 @@ Here, FoxAI plays a game of the "Training" game mode, right now it is currently 
 
 # Update!
 
-This repository will probably use a [modified version of higan](https://github.com/GuineaBot3Labs/higan-env) to interface with, until then however, this project is post-poned.
+This repository will probably use a [modified version of ares](https://github.com/GuineaBot3Labs/ares-env) to interface with, until then however, this project is post-poned.
 
 ## Setup (Documentation incomplete!) ##
-First off, you will have to install higan:
 
-    sudo apt install higan
-
-or if your linux installation is anything like mine, then run:
-
-    sudo nano /etc/apt/sources.list
+This project has been postponed for now. Until then, you can help on [ares-env](https://github.com/GuineaBot3Labs/ares-env)
 
 where you will insert the lines for ubuntu's repo, and if the key is missing then add it, finally, run:
 
@@ -31,12 +26,8 @@ Download the requirements like so:
 
 ## Currently in development, come back later! (unless you're willing to help) ##
 
-We need help with this project, please [fork](../../fork) this repository and implement some cool features and open a pull request! (i.e., a complete integration into higan's emulator or something.) Or if you want to be more directly involved, you can join [here.](https://github.com/GuineaBot3Labs/join)
+We need help with this project, please [fork](../../fork) this repository and implement some cool features and open a pull request! (i.e., a complete dataset for supervised training.) Or if you want to be more directly involved, you can join [here.](https://github.com/GuineaBot3Labs/join)
 
-We are also in need of players on higan playing this game, so we can train Peppy on the gameplay to evaluate FoxAI in real time. Please use the "higan.py" file to continously take screenshots of higan (note: This data will not be labeled, it will be labeled by our [Dataset Labeling](https://github.com/orgs/GuineaBot3Labs/teams/dataset-labelers) team. We need more people in that team, join [here and request a specific team with a label.](https://github.com/GuineaBot3Labs/join)
-)
-
-![FoxAI in training game mode](https://github.com/GuineaBot3Labs/StarFox-AI/blob/main/Vision.png)
 
 # Disclaimer
-This software does not condone pirating in any way. All credit other than the AI research to Nintendo and higan, which have both made this project possible.
+This software does not condone pirating in any way. All credit other than the AI research, to the [ares developers](https://github.com/ares-emulator/ares/contributors), which have all made this project possible. Note that Nintendo should also be credited for their amazing work on the SNES Super FX system, and the StarFox ROM.
