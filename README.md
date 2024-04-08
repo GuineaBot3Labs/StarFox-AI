@@ -26,8 +26,7 @@ Download the requirements like so:
 
 ## Currently in development, come back later! (unless you're willing to help) ##
 
-We need help with this project, please [fork](../../fork) this repository and implement some cool features and open a pull request! (i.e., a complete dataset for supervised training.) Or if you want to be more directly involved, you can join [here.](https://github.com/GuineaBot3Labs/join)
-
+If you want to help develop this project, please help on the [ares-env](https://github.com/GuineaBot3Labs/ares-env) project.
 
 # Disclaimer
 This software does not condone pirating in any way. All credit other than the AI research, to the [ares developers](https://github.com/ares-emulator/ares/contributors), which have all made this project possible. Note that Nintendo should also be credited for their amazing work on the SNES Super FX system, and the StarFox ROM.
