@@ -3,7 +3,7 @@ A project focused on computer vision and spatial awareness in AI. Operates on hi
 
 ![FoxAI in training game mode](https://github.com/GuineaBot3Labs/StarFox-AI/blob/main/FoxAI.png)
 
-Here, FoxAI plays a game of the "Training" game mode, right now it is currently in it's infant stage, like GuineaBot3 it did start very small, (which still has bugs by the way, thus we haven't seen it for a long time, help [here.](https://github.com/GuineaBot3Labs/deep-GuineaBot3-lichess-bot))
+Here, FoxAI plays a game of the "Training" game mode, right now it is currently in it's infant stage, like GuineaBot3 it did start very small, (which still has bugs by the way, thus we haven't seen it for a long time, help [here.](https://github.com/GuineaBot3Labs/GuineaBot3))
 
 # Update!
 
