@@ -18,7 +18,7 @@ where you will insert the lines for ubuntu's repo, and if the key is missing the
     sudo apt update
     sudo apt install higan
 
-You will then have to **LEGALLY** obtain a StarFox ROM. Load this ROM into the emulator, and do the rest. (May require fiddling around with the settings.)
+You will have to **LEGALLY** obtain a StarFox ROM. Load this ROM into the emulator, and do the rest. (May require fiddling around with the settings.)
 
 Download the requirements like so:
 
